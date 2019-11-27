@@ -34,6 +34,7 @@ class Login extends Component {
       authFlag: false,
       authFailed: false
     })
+
   }
   renderError = ({ error, touched }) => {
     if (touched && error) {
@@ -59,7 +60,7 @@ class Login extends Component {
     )
   }
 
-  onSubmit = formValues => {
+  onSubmit = (formValues) => {
     console.log('OnSubmit' + formValues)
     let data = {
       email: formValues.email,
